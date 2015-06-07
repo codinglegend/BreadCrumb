@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51F1AF71B240B2800FA17EF /* NewTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51F1AF61B240B2800FA17EF /* NewTripViewController.m */; };
 		B571AD121B23C54700CAC658 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD111B23C54700CAC658 /* main.m */; };
 		B571AD151B23C54700CAC658 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD141B23C54700CAC658 /* AppDelegate.m */; };
 		B571AD181B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B571AD161B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B51F1AF51B240B2800FA17EF /* NewTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTripViewController.h; sourceTree = "<group>"; };
+		B51F1AF61B240B2800FA17EF /* NewTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTripViewController.m; sourceTree = "<group>"; };
 		B571AD0C1B23C54700CAC658 /* RoadtripTrackerCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadtripTrackerCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B571AD101B23C54700CAC658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B571AD111B23C54700CAC658 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				B571AD1A1B23C54700CAC658 /* MasterViewController.m */,
 				B571AD1C1B23C54700CAC658 /* DetailViewController.h */,
 				B571AD1D1B23C54700CAC658 /* DetailViewController.m */,
+				B51F1AF51B240B2800FA17EF /* NewTripViewController.h */,
+				B51F1AF61B240B2800FA17EF /* NewTripViewController.m */,
 				B571AD1F1B23C54700CAC658 /* Main.storyboard */,
 				B571AD221B23C54700CAC658 /* Images.xcassets */,
 				B571AD241B23C54700CAC658 /* LaunchScreen.xib */,
@@ -249,6 +254,7 @@
 				B571AD181B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld in Sources */,
 				B571AD121B23C54700CAC658 /* main.m in Sources */,
 				B571AD3F1B23CF6600CAC658 /* CoreDataStack.m in Sources */,
+				B51F1AF71B240B2800FA17EF /* NewTripViewController.m in Sources */,
 				B571AD481B23E56E00CAC658 /* Coordinates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +446,7 @@
 				B571AD371B23C54700CAC658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B571AD381B23C54700CAC658 /* Build configuration list for PBXNativeTarget "RoadtripTrackerCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +455,7 @@
 				B571AD3A1B23C54700CAC658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

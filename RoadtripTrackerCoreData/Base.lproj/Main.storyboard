@@ -57,9 +57,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="N0p-Yg-hAD">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="N0p-Yg-hAD">
                             <connections>
-                                <segue destination="d3H-UL-MDv" kind="presentation" id="HCh-Yy-aIf"/>
+                                <segue destination="UE4-99-MIj" kind="presentation" id="8sY-I5-9qx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -69,22 +69,41 @@
             <point key="canvasLocation" x="605" y="64"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="4Kq-Rd-Pzl">
+        <scene sceneID="a1S-oa-ou0">
             <objects>
-                <viewController id="d3H-UL-MDv" sceneMemberID="viewController">
+                <viewController id="UE4-99-MIj" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="D1o-UD-xwv"/>
-                        <viewControllerLayoutGuide type="bottom" id="H5g-rX-nl7"/>
+                        <viewControllerLayoutGuide type="top" id="KQ7-Uh-svh"/>
+                        <viewControllerLayoutGuide type="bottom" id="yzT-gZ-Iu9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mVS-Ht-mu3">
+                    <view key="view" contentMode="scaleToFill" id="bXg-IG-WkD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Trip Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0c-NR-N55">
+                                <rect key="frame" x="97" y="123" width="244" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWe-xs-Srd">
+                                <rect key="frame" x="91" y="184" width="72" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cS-qp-7xX">
+                                <rect key="frame" x="255" y="189" width="78" height="30"/>
+                                <state key="normal" title="Start Trip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4pE-zS-l7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyy-En-mtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="805"/>
+            <point key="canvasLocation" x="562" y="829"/>
         </scene>
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
