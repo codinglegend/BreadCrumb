@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B51F1AF71B240B2800FA17EF /* NewTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51F1AF61B240B2800FA17EF /* NewTripViewController.m */; };
+		B51F1B2E1B24E09100FA17EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51F1B2D1B24E09100FA17EF /* MapKit.framework */; };
+		B51F1B301B24E0A100FA17EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51F1B2F1B24E0A100FA17EF /* CoreLocation.framework */; };
 		B571AD121B23C54700CAC658 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD111B23C54700CAC658 /* main.m */; };
 		B571AD151B23C54700CAC658 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD141B23C54700CAC658 /* AppDelegate.m */; };
 		B571AD181B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B571AD161B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		B51F1AF51B240B2800FA17EF /* NewTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTripViewController.h; sourceTree = "<group>"; };
 		B51F1AF61B240B2800FA17EF /* NewTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTripViewController.m; sourceTree = "<group>"; };
+		B51F1B2D1B24E09100FA17EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B51F1B2F1B24E0A100FA17EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B571AD0C1B23C54700CAC658 /* RoadtripTrackerCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadtripTrackerCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B571AD101B23C54700CAC658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B571AD111B23C54700CAC658 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51F1B301B24E0A100FA17EF /* CoreLocation.framework in Frameworks */,
+				B51F1B2E1B24E09100FA17EF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,8 @@
 		B571AD031B23C54700CAC658 = {
 			isa = PBXGroup;
 			children = (
+				B51F1B2F1B24E0A100FA17EF /* CoreLocation.framework */,
+				B51F1B2D1B24E09100FA17EF /* MapKit.framework */,
 				B571AD0E1B23C54700CAC658 /* RoadtripTrackerCoreData */,
 				B571AD2E1B23C54700CAC658 /* RoadtripTrackerCoreDataTests */,
 				B571AD0D1B23C54700CAC658 /* Products */,
