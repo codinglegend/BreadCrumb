@@ -147,7 +147,13 @@
                             <constraint firstItem="tP1-2g-Vl8" firstAttribute="bottom" secondItem="a0L-h9-sNL" secondAttribute="top" id="zAb-aq-OZO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Map View" id="cra-N8-TIN"/>
+                    <navigationItem key="navigationItem" title="Map View" id="cra-N8-TIN">
+                        <barButtonItem key="rightBarButtonItem" title="End Trip" id="PzE-hn-Eka">
+                            <connections>
+                                <action selector="endTripWasPressed:" destination="Ah7-4n-0Wa" id="MzM-eY-FFs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="tP1-2g-Vl8" id="zot-pF-Uiv"/>
                     </connections>

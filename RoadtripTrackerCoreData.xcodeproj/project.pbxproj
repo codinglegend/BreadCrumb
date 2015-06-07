@@ -116,14 +116,14 @@
 				B571AD1D1B23C54700CAC658 /* DetailViewController.m */,
 				B51F1AF51B240B2800FA17EF /* NewTripViewController.h */,
 				B51F1AF61B240B2800FA17EF /* NewTripViewController.m */,
-				B571AD1F1B23C54700CAC658 /* Main.storyboard */,
-				B571AD221B23C54700CAC658 /* Images.xcassets */,
-				B571AD241B23C54700CAC658 /* LaunchScreen.xib */,
-				B571AD161B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld */,
 				B571AD461B23E56E00CAC658 /* Coordinates.h */,
 				B571AD471B23E56E00CAC658 /* Coordinates.m */,
 				B571AD491B23E56F00CAC658 /* Trip.h */,
 				B571AD4A1B23E56F00CAC658 /* Trip.m */,
+				B571AD1F1B23C54700CAC658 /* Main.storyboard */,
+				B571AD221B23C54700CAC658 /* Images.xcassets */,
+				B571AD241B23C54700CAC658 /* LaunchScreen.xib */,
+				B571AD161B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld */,
 				B571AD0F1B23C54700CAC658 /* Supporting Files */,
 			);
 			path = RoadtripTrackerCoreData;

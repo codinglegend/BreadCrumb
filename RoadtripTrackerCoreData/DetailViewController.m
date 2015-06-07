@@ -19,12 +19,18 @@
 
 @implementation DetailViewController
 
+#pragma mark - End Trip Button
+
+- (IBAction)endTripWasPressed:(UIBarButtonItem *)sender {
+    [self.locationManager stopUpdatingLocation]; // did not work
+}
+
 #pragma mark - Managing the detail item
 
 - (void)setDetailItem:(id)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-            
+        
         // Update the view.
         [self configureView];
     }
@@ -56,6 +62,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Location Manager
 
