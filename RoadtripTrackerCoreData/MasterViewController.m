@@ -79,6 +79,11 @@
     
     cell.textLabel.text = trip.name;
     
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MMMM dd, YYYY - hh:mma"];
+    
+    cell.detailTextLabel.text = [dateFormat stringFromDate:trip.date];
+    
     return cell;
 }
 
@@ -214,6 +219,8 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView endUpdates];
+    
+    //[self.tableView reloadData];
 }
 
 /*
