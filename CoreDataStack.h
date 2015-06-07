@@ -18,4 +18,6 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
++ (instancetype)defaultStack;
+
 @end
