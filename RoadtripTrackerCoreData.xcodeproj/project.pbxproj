@@ -16,6 +16,7 @@
 		B571AD231B23C54700CAC658 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B571AD221B23C54700CAC658 /* Images.xcassets */; };
 		B571AD261B23C54700CAC658 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B571AD241B23C54700CAC658 /* LaunchScreen.xib */; };
 		B571AD321B23C54700CAC658 /* RoadtripTrackerCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD311B23C54700CAC658 /* RoadtripTrackerCoreDataTests.m */; };
+		B571AD3F1B23CF6600CAC658 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD3E1B23CF6600CAC658 /* CoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		B571AD2B1B23C54700CAC658 /* RoadtripTrackerCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadtripTrackerCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B571AD301B23C54700CAC658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B571AD311B23C54700CAC658 /* RoadtripTrackerCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadtripTrackerCoreDataTests.m; sourceTree = "<group>"; };
+		B571AD3D1B23CF6600CAC658 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataStack.h; path = ../CoreDataStack.h; sourceTree = "<group>"; };
+		B571AD3E1B23CF6600CAC658 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataStack.m; path = ../CoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 		B571AD0E1B23C54700CAC658 /* RoadtripTrackerCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				B571AD3D1B23CF6600CAC658 /* CoreDataStack.h */,
+				B571AD3E1B23CF6600CAC658 /* CoreDataStack.m */,
 				B571AD131B23C54700CAC658 /* AppDelegate.h */,
 				B571AD141B23C54700CAC658 /* AppDelegate.m */,
 				B571AD191B23C54700CAC658 /* MasterViewController.h */,
@@ -232,6 +237,7 @@
 				B571AD151B23C54700CAC658 /* AppDelegate.m in Sources */,
 				B571AD181B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld in Sources */,
 				B571AD121B23C54700CAC658 /* main.m in Sources */,
+				B571AD3F1B23CF6600CAC658 /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
