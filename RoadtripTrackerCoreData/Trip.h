@@ -12,7 +12,7 @@
 
 @interface Trip : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic) NSTimeInterval date;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) NSDate *date;
 
 @end

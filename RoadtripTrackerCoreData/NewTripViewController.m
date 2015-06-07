@@ -7,6 +7,8 @@
 //
 
 #import "NewTripViewController.h"
+#import "CoreDataStack.h"
+#import "Trip.h"
 
 @interface NewTripViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *tripNameTextField;
@@ -21,7 +23,26 @@
     // Do any additional setup after loading the view.
 }
 
+
+- (void)insertTrip {
+    
+    CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
+    
+    Trip *trip = [NSEntityDescription insertNewObjectForEntityForName:@"Trip" inManagedObjectContext:coreDataStack.managedObjectContext];
+    
+    trip.name = self.tripNameTextField.text;
+    
+    trip.date  = [[NSDate alloc] init];
+    [coreDataStack saveContext];
+    
+}
+
 - (IBAction)startButtonWasPressed:(UIButton *)sender {
+    
+    [self insertTrip];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 - (IBAction)cancelButtonWasPressed:(UIButton *)sender {

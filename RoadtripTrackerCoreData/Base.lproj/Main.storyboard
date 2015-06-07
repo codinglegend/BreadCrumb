@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="605" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--New Trip View Controller-->
         <scene sceneID="a1S-oa-ou0">
             <objects>
-                <viewController id="UE4-99-MIj" sceneMemberID="viewController">
+                <viewController id="UE4-99-MIj" customClass="NewTripViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KQ7-Uh-svh"/>
                         <viewControllerLayoutGuide type="bottom" id="yzT-gZ-Iu9"/>
@@ -90,16 +90,25 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelButtonWasPressed:" destination="UE4-99-MIj" eventType="touchUpInside" id="jUH-Pq-bHQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cS-qp-7xX">
                                 <rect key="frame" x="255" y="189" width="78" height="30"/>
                                 <state key="normal" title="Start Trip">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonWasPressed:" destination="UE4-99-MIj" eventType="touchUpInside" id="z4c-GA-vHn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tripNameTextField" destination="G0c-NR-N55" id="50g-lP-99F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyy-En-mtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

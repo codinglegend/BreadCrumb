@@ -33,6 +33,7 @@
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "Alain.RoadtripTrackerCoreData" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    
 }
 
 - (NSManagedObjectModel *)managedObjectModel {
