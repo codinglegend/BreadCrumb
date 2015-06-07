@@ -17,6 +17,8 @@
 		B571AD261B23C54700CAC658 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B571AD241B23C54700CAC658 /* LaunchScreen.xib */; };
 		B571AD321B23C54700CAC658 /* RoadtripTrackerCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD311B23C54700CAC658 /* RoadtripTrackerCoreDataTests.m */; };
 		B571AD3F1B23CF6600CAC658 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD3E1B23CF6600CAC658 /* CoreDataStack.m */; };
+		B571AD481B23E56E00CAC658 /* Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD471B23E56E00CAC658 /* Coordinates.m */; };
+		B571AD4B1B23E56F00CAC658 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = B571AD4A1B23E56F00CAC658 /* Trip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		B571AD311B23C54700CAC658 /* RoadtripTrackerCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadtripTrackerCoreDataTests.m; sourceTree = "<group>"; };
 		B571AD3D1B23CF6600CAC658 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataStack.h; path = ../CoreDataStack.h; sourceTree = "<group>"; };
 		B571AD3E1B23CF6600CAC658 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataStack.m; path = ../CoreDataStack.m; sourceTree = "<group>"; };
+		B571AD461B23E56E00CAC658 /* Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinates.h; sourceTree = "<group>"; };
+		B571AD471B23E56E00CAC658 /* Coordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coordinates.m; sourceTree = "<group>"; };
+		B571AD491B23E56F00CAC658 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		B571AD4A1B23E56F00CAC658 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 				B571AD221B23C54700CAC658 /* Images.xcassets */,
 				B571AD241B23C54700CAC658 /* LaunchScreen.xib */,
 				B571AD161B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld */,
+				B571AD461B23E56E00CAC658 /* Coordinates.h */,
+				B571AD471B23E56E00CAC658 /* Coordinates.m */,
+				B571AD491B23E56F00CAC658 /* Trip.h */,
+				B571AD4A1B23E56F00CAC658 /* Trip.m */,
 				B571AD0F1B23C54700CAC658 /* Supporting Files */,
 			);
 			path = RoadtripTrackerCoreData;
@@ -232,12 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B571AD4B1B23E56F00CAC658 /* Trip.m in Sources */,
 				B571AD1E1B23C54700CAC658 /* DetailViewController.m in Sources */,
 				B571AD1B1B23C54700CAC658 /* MasterViewController.m in Sources */,
 				B571AD151B23C54700CAC658 /* AppDelegate.m in Sources */,
 				B571AD181B23C54700CAC658 /* RoadtripTrackerCoreData.xcdatamodeld in Sources */,
 				B571AD121B23C54700CAC658 /* main.m in Sources */,
 				B571AD3F1B23CF6600CAC658 /* CoreDataStack.m in Sources */,
+				B571AD481B23E56E00CAC658 /* Coordinates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
