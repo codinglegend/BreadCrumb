@@ -9,7 +9,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Trip" positionX="261" positionY="198" width="128" height="73"/>
         <element name="Coordinates" positionX="270" positionY="225" width="128" height="73"/>
+        <element name="Trip" positionX="261" positionY="198" width="128" height="73"/>
     </elements>
 </model>

@@ -7,6 +7,8 @@
 //
 
 #import "DetailViewController.h"
+#import "CoreDataStack.h"
+#import "Coordinates.h"
 
 @interface DetailViewController (){
     
@@ -14,6 +16,8 @@
 }
 
 @property (nonatomic) CLLocationManager* locationManager;
+@property (nonatomic) CLLocation* currentLocation;
+@property (nonatomic) NSMutableArray *locationArray;
 
 @end
 
@@ -22,7 +26,10 @@
 #pragma mark - End Trip Button
 
 - (IBAction)endTripWasPressed:(UIBarButtonItem *)sender {
-    [self.locationManager stopUpdatingLocation]; // did not work
+    //[self.locationManager stopUpdatingLocation]; // did not work
+    [self addCoordinatesToCoreData];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 #pragma mark - Managing the detail item
@@ -56,11 +63,30 @@
     self.locationManager.delegate = self;
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
+    
+    self.locationArray = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - add coordinates
+
+- (void)addCoordinatesToCoreData {
+    
+    CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
+    
+    Coordinates *coordinate = [NSEntityDescription insertNewObjectForEntityForName:@"Coordinates" inManagedObjectContext:coreDataStack.managedObjectContext];
+    
+    
+    coordinate.lat = self.currentLocation.coordinate.latitude; // = user location latitude
+    coordinate.lon = self.currentLocation.coordinate.longitude; // = user location longitude
+    
+
+    [coreDataStack saveContext];
+    
 }
 
 
@@ -84,6 +110,8 @@
         initialLocationSet = true;
         
     }
+    
+    [self.locationArray addObject:location];
 }
 
 - (void)locationManager:(CLLocationManager *)manager
